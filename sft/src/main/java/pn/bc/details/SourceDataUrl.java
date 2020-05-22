@@ -1,4 +1,4 @@
-package pn.bc.detail;
+package pn.bc.details;
 
 public class SourceDataUrl {
     private String urlType;

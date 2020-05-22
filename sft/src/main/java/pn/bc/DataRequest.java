@@ -5,6 +5,14 @@ public class DataRequest {
     private String sourceDataUrl;
     private String tokenDataUrl;
 
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
+
     public String getSourceDataUrl() {
         return sourceDataUrl;
     }

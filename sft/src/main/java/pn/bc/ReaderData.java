@@ -12,7 +12,6 @@ public class ReaderData {
 
     public ReaderData() throws MalformedURLException {
         url = new URL("http://www.mocky.io/v2/5c51b9dd3400003252129fb5");
-        System.out.println("Create Reader");
     }
 
     public StringBuffer getSbf() {
