@@ -19,11 +19,15 @@ public class ReaderData {
         return sbf;
     }
 
+    public synchronized void readData() throws MalformedURLException {
+        sbf = readData(url.toString());
+    }
 
-    public synchronized StringBuffer readData() {
+    public synchronized StringBuffer readData(String addr) throws MalformedURLException {
+        URL u = new URL(addr);
         StringBuffer res = new StringBuffer();
         try {
-            URLConnection urlConnection = url.openConnection();
+            URLConnection urlConnection = u.openConnection();
             BufferedReader bufferedReader = new BufferedReader(
                     new InputStreamReader(urlConnection.getInputStream()));
             String line;
@@ -34,7 +38,6 @@ public class ReaderData {
         } catch (Exception e) {
             e.printStackTrace();
         }
-        sbf = res;
         return res;
     }
 

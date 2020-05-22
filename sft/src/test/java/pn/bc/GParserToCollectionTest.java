@@ -16,7 +16,5 @@ class GParserToCollectionTest {
         System.out.println("---");
         System.out.println(parser.getDataList());
         System.out.println("---");
-
-
     }
 }
