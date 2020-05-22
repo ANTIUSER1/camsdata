@@ -19,23 +19,23 @@ public class ReaderData {
         return sbf;
     }
 
-    public synchronized void readData() {
+
+    public synchronized StringBuffer readData() {
+        StringBuffer res = new StringBuffer();
         try {
             URLConnection urlConnection = url.openConnection();
-
-            // wrap the urlconnection in a bufferedreader
             BufferedReader bufferedReader = new BufferedReader(
                     new InputStreamReader(urlConnection.getInputStream()));
-
             String line;
-
-            // read from the urlconnection via the bufferedreader
             while ((line = bufferedReader.readLine()) != null) {
-                sbf.append(line + System.lineSeparator());
+                res.append(line + System.lineSeparator());
             }
             bufferedReader.close();
         } catch (Exception e) {
             e.printStackTrace();
         }
+        sbf = res;
+        return res;
     }
+
 }
