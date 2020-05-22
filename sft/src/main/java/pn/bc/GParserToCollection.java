@@ -4,7 +4,7 @@ import com.google.gson.Gson;
 import pn.bc.details.SourceDataUrl;
 import pn.bc.details.TokenDataUrl;
 
-import java.net.MalformedURLException;
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
@@ -18,12 +18,12 @@ public class GParserToCollection {
         dataList = Arrays.asList(requestArray);
     }
 
-    public SourceDataUrl toSourceDataUrlList(String strData) throws MalformedURLException {
+    public SourceDataUrl toSourceDataUrlList(String strData) throws IOException {
         ReaderData rd = new ReaderData();
         return gson.fromJson(rd.readData(strData).toString(), SourceDataUrl.class);
     }
 
-    public TokenDataUrl toTokenDataUrlList(String strData) throws MalformedURLException {
+    public TokenDataUrl toTokenDataUrlList(String strData) throws IOException {
         ReaderData rd = new ReaderData();
         return gson.fromJson(rd.readData(strData).toString(), TokenDataUrl.class);
     }

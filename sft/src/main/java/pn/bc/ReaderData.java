@@ -1,6 +1,7 @@
 package pn.bc;
 
 import java.io.BufferedReader;
+import java.io.IOException;
 import java.io.InputStreamReader;
 import java.net.MalformedURLException;
 import java.net.URL;
@@ -18,22 +19,22 @@ public class ReaderData {
         return sbf;
     }
 
-    public synchronized void readData() throws MalformedURLException {
+    public synchronized void readData() throws Exception {
         sbf = readData(url.toString());
     }
 
-    public synchronized StringBuffer readData(String addr) throws MalformedURLException {
+    public synchronized StringBuffer readData(String addr) throws IOException {
         URL u = new URL(addr);
         StringBuffer res = new StringBuffer();
         try {
             URLConnection urlConnection = u.openConnection();
-            BufferedReader bufferedReader = new BufferedReader(
-                    new InputStreamReader(urlConnection.getInputStream()));
-            String line;
-            while ((line = bufferedReader.readLine()) != null) {
-                res.append(line + System.lineSeparator());
+            try (BufferedReader bufferedReader = new BufferedReader(
+                    new InputStreamReader(urlConnection.getInputStream()))) {
+                String line;
+                while ((line = bufferedReader.readLine()) != null) {
+                    res.append(line + System.lineSeparator());
+                }
             }
-            bufferedReader.close();
         } catch (Exception e) {
             e.printStackTrace();
         }
