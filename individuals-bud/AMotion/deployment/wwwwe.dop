@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<com.ibm.rules.studio.model.decisionservice:Operation xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:com.ibm.rules.studio.model.decisionservice="http://com.ibm.rules.studio/model/decisionservice.ecore" xmlns:ilog.rules.studio.model.query.extractor="http://ilog.rules.studio/model/query/extractor.ecore" rulesetName="wwwwe" usingRuleflow="true" ruleflowName="hgfdsa" targetRuleProjectName="AMotion">
+  <name>wwwwe</name>
+  <uuid>c5486f1c-cd61-4d90-9ae5-44969a945c90</uuid>
+  <referencedVariables variableName="ewq" variableSetName="dsss">
+    <variableSet href="../rules/dsss.var#f0bd7dc6-2d54-4be5-94f9-f4d5183a0ec5"/>
+  </referencedVariables>
+  <referencedVariables variableName="zxc" variableSetName="dsss" direction="OUT">
+    <variableSet href="../rules/dsss.var#f0bd7dc6-2d54-4be5-94f9-f4d5183a0ec5"/>
+  </referencedVariables>
+  <ruleflow href="../rules/hgfdsa.rfl#e752e631-8663-468b-84c9-35d412abc8f4"/>
+  <extractor xsi:type="ilog.rules.studio.model.query.extractor:QueryExtractor" name="wwwwe_extractor" validator="Default Validator"/>
+  <targetRuleProject href="../../AMotion#25c7de53-3022-471c-8f17-0fa21958ecf5"/>
+</com.ibm.rules.studio.model.decisionservice:Operation>

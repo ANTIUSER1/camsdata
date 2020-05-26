@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?><qualifiedTypeNameHistroy>
+<fullyQualifiedTypeName name="java.lang.Math"/>
+<fullyQualifiedTypeName name="pns.motion.limbs.Limb"/>
+<fullyQualifiedTypeName name="pns.motion.boxies.Position3d"/>
+<fullyQualifiedTypeName name="pns.motion.limbs.LimbTop"/>
+<fullyQualifiedTypeName name="pns.motion.limbs.LimbBottom"/>
+<fullyQualifiedTypeName name="pns.motion.limbs.LimbElement"/>
+<fullyQualifiedTypeName name="pns.motion.limbTemplate.LimbTop"/>
+<fullyQualifiedTypeName name="pns.motion.limbTemplate.LimbBottom"/>
+<fullyQualifiedTypeName name="pns.motion.limbTemplate.Limb"/>
+<fullyQualifiedTypeName name="pns.motion.manTemplate.Head"/>
+<fullyQualifiedTypeName name="pns.motion.manTemplate.Body"/>
+<fullyQualifiedTypeName name="pns.motion.manTemplate.Hand"/>
+<fullyQualifiedTypeName name="java.awt.List"/>
+<fullyQualifiedTypeName name="java.util.List"/>
+<fullyQualifiedTypeName name="java.util.ArrayList"/>
+<fullyQualifiedTypeName name="pns.motion.manTemplate.Man"/>
+<fullyQualifiedTypeName name="javax.xml.bind.annotation.XmlTransient"/>
+<fullyQualifiedTypeName name="java.lang.Thread"/>
+<fullyQualifiedTypeName name="pns.motion.limbTemplate.LimbEnd"/>
+<fullyQualifiedTypeName name="pns.motion.limbTemplate.LimbElement"/>
+<fullyQualifiedTypeName name="pns.motion.manTemplate.BodyElement"/>
+<fullyQualifiedTypeName name="pns.motion.coordinatesData.Position3d"/>
+</qualifiedTypeNameHistroy>

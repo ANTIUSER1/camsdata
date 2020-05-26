@@ -1,0 +1,101 @@
+
+property loadGetterSetterAsProperties "true"
+property origin "xom:/AMotion//manMotion-xom"
+property uuid "395a2529-b6d3-4ff5-ba47-8e10de18371f"
+package pns.motion;
+
+
+public class ManMotios
+{
+    public readonly java.util.List manList domain 0,* class pns.motion.manTemplate.Man;
+    public ManMotios();
+    public void makeManMotios(int arg);
+}
+
+package pns.motion.coordinatesData;
+
+
+public class Position3d
+{
+    public readonly double x;
+    public readonly double y;
+    public readonly double z;
+    public Position3d(double arg1, double arg2, double arg3);
+    public Position3d();
+}
+
+package pns.motion.limbTemplate;
+
+
+public class Limb
+{
+    public readonly pns.motion.limbTemplate.LimbBottom bottom;
+    public readonly pns.motion.limbTemplate.LimbEnd end;
+    public readonly boolean inUse;
+    public readonly boolean right;
+    public readonly pns.motion.limbTemplate.LimbTop top;
+    public Limb(boolean arg);
+    public Limb(boolean arg1, boolean arg2);
+}
+
+public class LimbBottom
+        extends pns.motion.limbTemplate.LimbElement
+{
+    public LimbBottom(pns.motion.coordinatesData.Position3d arg1, pns.motion.coordinatesData.Position3d arg2, pns.motion.coordinatesData.Position3d arg3, pns.motion.coordinatesData.Position3d arg4);
+    public LimbBottom();
+}
+
+public class LimbElement
+{
+    public readonly pns.motion.coordinatesData.Position3d acceleration;
+    public readonly boolean inUse;
+    public readonly pns.motion.coordinatesData.Position3d magnet;
+    public readonly pns.motion.coordinatesData.Position3d velocity;
+    public LimbElement(boolean arg);
+    public LimbElement(pns.motion.coordinatesData.Position3d arg1, pns.motion.coordinatesData.Position3d arg2, pns.motion.coordinatesData.Position3d arg3, pns.motion.coordinatesData.Position3d arg4);
+    public LimbElement();
+}
+
+public class LimbEnd
+        extends pns.motion.limbTemplate.LimbElement
+{
+    public LimbEnd(pns.motion.coordinatesData.Position3d arg1, pns.motion.coordinatesData.Position3d arg2, pns.motion.coordinatesData.Position3d arg3, pns.motion.coordinatesData.Position3d arg4);
+    public LimbEnd();
+}
+
+public class LimbTop
+        extends pns.motion.limbTemplate.LimbElement
+{
+    public LimbTop(pns.motion.coordinatesData.Position3d arg1, pns.motion.coordinatesData.Position3d arg2, pns.motion.coordinatesData.Position3d arg3, pns.motion.coordinatesData.Position3d arg4);
+    public LimbTop();
+}
+
+package pns.motion.manTemplate;
+
+
+public class Hand
+        extends pns.motion.limbTemplate.Limb
+{
+    public Hand(boolean arg);
+}
+
+public class Head
+        extends pns.motion.limbTemplate.LimbElement
+{
+    public Head(pns.motion.coordinatesData.Position3d arg1, pns.motion.coordinatesData.Position3d arg2, pns.motion.coordinatesData.Position3d arg3, pns.motion.coordinatesData.Position3d arg4);
+    public Head();
+}
+
+public class Man
+{
+    public readonly pns.motion.manTemplate.Body body;
+    public readonly pns.motion.manTemplate.Head head;
+    public readonly pns.motion.manTemplate.Hand leftHand;
+    public readonly pns.motion.manTemplate.Hand leftLeg;
+    public readonly long moment;
+    public readonly pns.motion.manTemplate.Hand rightHand;
+    public readonly pns.motion.manTemplate.Hand rightLeg;
+    public Man(pns.motion.manTemplate.Head arg1, pns.motion.manTemplate.Body arg2, pns.motion.manTemplate.Hand arg3, pns.motion.manTemplate.Hand arg4, pns.motion.manTemplate.Hand arg5, pns.motion.manTemplate.Hand arg6, long arg7);
+    public Man();
+}
+

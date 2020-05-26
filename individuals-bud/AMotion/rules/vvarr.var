@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ilog.rules.studio.model.base:VariableSet xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ilog.rules.studio.model.base="http://ilog.rules.studio/model/base.ecore">
+  <name>vvarr</name>
+  <uuid>d2bd4194-10a9-470a-90e7-5e8c8c920111</uuid>
+  <variables name="c" type="int" initialValue="" verbalization="cc"/>
+  <variables name="ManMotionInfo" type="pns.motion.ManMotios" initialValue="" verbalization="nnoi"/>
+  <variables name="motion" type="java.util.List" initialValue="" verbalization="myVar"/>
+</ilog.rules.studio.model.base:VariableSet>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<com.ibm.rules.studio.model.decisionservice:Operation xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:com.ibm.rules.studio.model.decisionservice="http://com.ibm.rules.studio/model/decisionservice.ecore" xmlns:ilog.rules.studio.model.query.extractor="http://ilog.rules.studio/model/query/extractor.ecore" rulesetName="makeMotion" usingRuleflow="true" ruleflowName="rtFlow" targetRuleProjectName="AMotion">
+  <name>makeMotion</name>
+  <uuid>ba938235-4ed2-444a-85ae-99161fb00e13</uuid>
+  <referencedVariables variableName="c" variableSetName="vvarr">
+    <variableSet href="../rules/vvarr.var#d2bd4194-10a9-470a-90e7-5e8c8c920111"/>
+  </referencedVariables>
+  <referencedVariables variableName="ManMotionInfo" variableSetName="vvarr" direction="OUT">
+    <variableSet href="../rules/vvarr.var#d2bd4194-10a9-470a-90e7-5e8c8c920111"/>
+  </referencedVariables>
+  <ruleflow href="../rules/rtFlow.rfl#1aca9525-d169-45b5-a0a7-a8c08d0ac509"/>
+  <extractor xsi:type="ilog.rules.studio.model.query.extractor:QueryExtractor" name="makeMotion_extractor" validator="Default Validator"/>
+  <targetRuleProject href="../../AMotion#25c7de53-3022-471c-8f17-0fa21958ecf5"/>
+</com.ibm.rules.studio.model.decisionservice:Operation>

@@ -1,0 +1,65 @@
+# Vocabulary Properties
+uuid = ad0afb57-f7df-4288-beea-2a70b87b762e
+
+# pns.motion.ManMotios
+pns.motion.ManMotios#concept.label = man motios
+pns.motion.ManMotios.manList#phrase.navigation = {man} of {this}
+
+# pns.motion.coordinatesData.Position3d
+pns.motion.coordinatesData.Position3d#concept.label = position3d
+pns.motion.coordinatesData.Position3d.x#phrase.navigation = {x} of {this}
+pns.motion.coordinatesData.Position3d.y#phrase.navigation = {y} of {this}
+pns.motion.coordinatesData.Position3d.z#phrase.navigation = {z} of {this}
+
+# pns.motion.limbTemplate.Limb
+pns.motion.limbTemplate.Limb#concept.label = limb
+pns.motion.limbTemplate.Limb.bottom#phrase.navigation = {bottom} of {this}
+pns.motion.limbTemplate.Limb.end#phrase.navigation = {end} of {this}
+pns.motion.limbTemplate.Limb.inUse#phrase.navigation = {this} is in use
+pns.motion.limbTemplate.Limb.right#phrase.navigation = {this} is right
+pns.motion.limbTemplate.Limb.top#phrase.navigation = {top} of {this}
+
+# pns.motion.limbTemplate.LimbBottom
+pns.motion.limbTemplate.LimbBottom#concept.label = limb bottom
+
+# pns.motion.limbTemplate.LimbElement
+pns.motion.limbTemplate.LimbElement#concept.label = limb element
+pns.motion.limbTemplate.LimbElement.acceleration#phrase.navigation = {acceleration} of {this}
+pns.motion.limbTemplate.LimbElement.inUse#phrase.navigation = {this} is in use
+pns.motion.limbTemplate.LimbElement.magnet#phrase.navigation = {magnet} of {this}
+pns.motion.limbTemplate.LimbElement.velocity#phrase.navigation = {velocity} of {this}
+
+# pns.motion.limbTemplate.LimbEnd
+pns.motion.limbTemplate.LimbEnd#concept.label = limb end
+
+# pns.motion.limbTemplate.LimbTop
+pns.motion.limbTemplate.LimbTop#concept.label = limb top
+
+# pns.motion.manTemplate.Body
+pns.motion.manTemplate.Body#concept.label = body
+pns.motion.manTemplate.Body.bottomLeftElement#phrase.navigation = {bottom left element} of {this}
+pns.motion.manTemplate.Body.bottomRightElement#phrase.navigation = {bottom right element} of {this}
+pns.motion.manTemplate.Body.centerElement#phrase.navigation = {center element} of {this}
+pns.motion.manTemplate.Body.setBottomLeftElement(pns.motion.coordinatesData.Position3d,pns.motion.coordinatesData.Position3d,pns.motion.coordinatesData.Position3d,pns.motion.coordinatesData.Position3d,boolean,boolean)#phrase.action = {this}.setBottomLeftElement({0}, {1}, {2}, {3}, {4}, {5})
+pns.motion.manTemplate.Body.setBottomRightElement(pns.motion.coordinatesData.Position3d,pns.motion.coordinatesData.Position3d,pns.motion.coordinatesData.Position3d,pns.motion.coordinatesData.Position3d,boolean,boolean)#phrase.action = {this}.setBottomRightElement({0}, {1}, {2}, {3}, {4}, {5})
+pns.motion.manTemplate.Body.setCenterElement(pns.motion.coordinatesData.Position3d,pns.motion.coordinatesData.Position3d,pns.motion.coordinatesData.Position3d,pns.motion.coordinatesData.Position3d,boolean,boolean)#phrase.action = {this}.setCenterElement({0}, {1}, {2}, {3}, {4}, {5})
+pns.motion.manTemplate.Body.setTopLeftElement(pns.motion.coordinatesData.Position3d,pns.motion.coordinatesData.Position3d,pns.motion.coordinatesData.Position3d,pns.motion.coordinatesData.Position3d,boolean,boolean)#phrase.action = {this}.setTopLeftElement({0}, {1}, {2}, {3}, {4}, {5})
+pns.motion.manTemplate.Body.setTopRightElement(pns.motion.coordinatesData.Position3d,pns.motion.coordinatesData.Position3d,pns.motion.coordinatesData.Position3d,pns.motion.coordinatesData.Position3d,boolean,boolean)#phrase.action = {this}.setTopRightElement({0}, {1}, {2}, {3}, {4}, {5})
+pns.motion.manTemplate.Body.topLeftElement#phrase.navigation = {top left element} of {this}
+pns.motion.manTemplate.Body.topRightElement#phrase.navigation = {top right element} of {this}
+
+# pns.motion.manTemplate.Hand
+pns.motion.manTemplate.Hand#concept.label = hand
+
+# pns.motion.manTemplate.Head
+pns.motion.manTemplate.Head#concept.label = head
+
+# pns.motion.manTemplate.Man
+pns.motion.manTemplate.Man#concept.label = man
+pns.motion.manTemplate.Man.body#phrase.navigation = {body} of {this}
+pns.motion.manTemplate.Man.head#phrase.navigation = {head} of {this}
+pns.motion.manTemplate.Man.leftHand#phrase.navigation = {left hand} of {this}
+pns.motion.manTemplate.Man.leftLeg#phrase.navigation = {left leg} of {this}
+pns.motion.manTemplate.Man.moment#phrase.navigation = {moment} of {this}
+pns.motion.manTemplate.Man.rightHand#phrase.navigation = {right hand} of {this}
+pns.motion.manTemplate.Man.rightLeg#phrase.navigation = {right leg} of {this}

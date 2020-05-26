@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ilog.rules.studio.model.base:VariableSet xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ilog.rules.studio.model.base="http://ilog.rules.studio/model/base.ecore">
+  <name>dsss</name>
+  <uuid>f0bd7dc6-2d54-4be5-94f9-f4d5183a0ec5</uuid>
+  <variables name="zxc" type="int" initialValue="3" verbalization="r"/>
+  <variables name="ewq" type="int" initialValue="5" verbalization="ff"/>
+</ilog.rules.studio.model.base:VariableSet>

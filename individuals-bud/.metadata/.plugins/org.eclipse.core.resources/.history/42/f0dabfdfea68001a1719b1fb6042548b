@@ -1,0 +1,41 @@
+package pns.motion.limbTemplate;
+
+public class Limb {
+
+	private boolean isRight = false;
+	private boolean inUse = true;
+	private LimbTop top = new LimbTop();
+	private LimbBottom bottom = new LimbBottom();
+	private LimbEnd end = new LimbEnd();
+
+	public Limb(boolean isRight) {
+		super();
+		this.isRight = isRight;
+	}
+
+	public Limb(boolean inUse, boolean isRight) {
+		this(isRight);
+		this.inUse = inUse;
+	}
+
+	public boolean isRight() {
+		return isRight;
+	}
+
+	public LimbTop getTop() {
+		return top;
+	}
+
+	public LimbBottom getBottom() {
+		return bottom;
+	}
+
+	public LimbEnd getEnd() {
+		return end;
+	}
+
+	public boolean isInUse() {
+		return inUse;
+	}
+
+}
